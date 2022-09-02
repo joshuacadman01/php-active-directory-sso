@@ -1,9 +1,3 @@
-# Package is deprecated
-
-My apologies to all.  I do not have time to maintain this code.  If you are interested in maintaining this code feel free to fork it or create a derivative work.  I would direct people there frmo here.
-
-# Magium Active Directory Integration
-
 *For stupid-easy PHP integration with Azure Active Directory*.
 
 This is a simple library that uses the `league/oauth2-client` to provide OAuth2 based integration with Active Directory.  Out of the box it is configured to work with Active Directory on Azure but, though I haven't tested it, you can provide a different configuration object to the primary adapter and you should be able to authenticate against any Active Directory implementation as long as it has OAuth2 connectivity.
