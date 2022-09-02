@@ -152,7 +152,7 @@ class ActiveDirectory
         if (!$this->isEnabled()) {
             throw new InvalidRequestException('Do not authenticate if the Active Directory integration is not enabled');
         }
-        if (session_status() !== PHP_SESSION_ACTIVE) {
+        if (!isset($_SESSION)) {
             throw new InvalidRequestException('The PHP session must be started prior to authenticating');
         }
 
